@@ -29,7 +29,7 @@ import kotlinx.coroutines.launch
 class EntryViewModel(private val juiceRepository: JuiceRepository) : ViewModel() {
 
     fun getJuiceStream(id: Long): Flow<Juice?> = juiceRepository.getJuiceStream(id)
-
+//
     fun saveJuice(
         id: Long,
         name: String,
