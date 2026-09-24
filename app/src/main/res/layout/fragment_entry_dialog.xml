@@ -56,20 +56,39 @@
                 app:layout_constraintEnd_toStartOf="@+id/guideline_middle"
                 app:layout_constraintStart_toStartOf="@+id/guideline_left" />
 
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:text="NOBMRE DEL JUGO"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
 
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
+                android:hint="Ingrese un nombre"
                 android:inputType="text"
-                android:text="Name" />
-            <EditText
+                 />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:text="DESCRIPCION"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="text"
-                android:text="Name" />
-
+            android:hint="Ingrese un nombre" />
+        </LinearLayout>
 
 
             <LinearLayout
@@ -78,12 +97,12 @@
                 android:layout_height="match_parent">
 
                 <TextView
-                    android:text="TextView"
+                    android:text="COLOR"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
 
                 <Spinner
-                    android:id="@+id/mi_lista_desplegable"
+                    android:id="@+id/spn_color"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:spinnerMode="dropdown" />
@@ -97,12 +116,12 @@
                 android:layout_height="match_parent">
 
                 <TextView
-                    android:text="TextView"
+                    android:text="RATING"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
 
                 <Spinner
-                    android:id="@+id/mi_lista_desplegable"
+                    android:id="@+id/spn_rating"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:spinnerMode="dropdown" />
@@ -113,17 +132,25 @@
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:weightSum="2"
+                android:padding="16dp">
 
                 <Button
-                    android:text="Button"
+                    android:id="@+id/btn_cancel"
+                    android:text="CANCELAR"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="16dp"/>
 
                 <Button
-                    android:text="Button"
+                    android:id="@+id/btn_save"
+                    android:text="GUARDAR"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="16dp"/>
 
 
 
